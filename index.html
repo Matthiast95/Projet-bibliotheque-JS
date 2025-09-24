@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bibliothèque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Section Livres -->
+    <section id="livres">
+        <h2>Gestion des Livres</h2>
+        <form id="form-livre">
+            <!-- Formulaire d'ajout livre -->
+            <label for="ajouterLivre">Ajouter un livre</label>
+            <input type="text" id="titreLivre" placeholder="Titre du livre" />
+            <input type="text" id="auteurLivre" placeholder="Auteur du livre" />
+            <input type="number" id="quantiteLivre" placeholder="Quantité" />
+            <button type="submit" id="ajouterLivre">Ajouter Livre</button>
+        </form>
+        <div id="liste-livres">
+            <!-- Liste des livres -->
+        </div>
+    </section>
+
+    <!-- Section Utilisateurs -->
+    <section id="utilisateurs">
+        <h2>Gestion des Utilisateurs</h2>
+        <form id="form-utilisateur">
+            <!-- Formulaire d'ajout utilisateur -->
+            <label for="ajouterUtilisateur">Ajouter un utilisateur</label>
+            <input type="text" id="nomUtilisateur" placeholder="Nom de l'utilisateur" />
+            <input type="text" id="prenomUtilisateur" placeholder="Prénom de l'utilisateur" />
+            <input type="text" id="emailUtilisateur" placeholder="Email de l'utilisateur" />
+            <button type="submit" id="ajouterUtilisateur">Ajouter Utilisateur</button>
+        </form>
+        <div id="liste-utilisateurs">
+            <!-- Liste des utilisateurs -->
+        </div>
+    </section>
+
+    <!-- Section Emprunts -->
+    <section id="emprunts">
+        <h2>Gestion des Emprunts</h2>
+        <form id="form-emprunt">
+            <!-- Formulaire d'emprunt -->
+            <label for="emprunterLivre">Emprunter un livre</label>
+            <select id="utilisateurIdEmprunt"></select>
+            <select id="livreIdEmprunt"></select>
+            <button type="submit" id="emprunterLivre">Emprunter Livre</button>
+        </form>
+        <div id="liste-emprunts">
+            <!-- Liste des emprunts -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
